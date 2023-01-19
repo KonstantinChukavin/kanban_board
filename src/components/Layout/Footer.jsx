@@ -1,10 +1,10 @@
 import "../../styles/Footer.css"
 
-const Footer = ({tasks}) => {
+const Footer = ({ tasks }) => {
   const activeTasks = []
   const finishedTasks = []
-  tasks.map( item => {item.status != "Finished" ? activeTasks.push(item) : finishedTasks.push(item)})
-  return(
+  tasks.map(item => { item.status != "Finished" ? activeTasks.push(item) : finishedTasks.push(item) })
+  return (
     <footer className="footer">
       <div className="wrapper">
         <div className="footer__counter">
@@ -16,7 +16,7 @@ const Footer = ({tasks}) => {
           </div>
         </div>
         <div className="footer__author">
-          Kanban board by Konstantin Volik, 2022
+          Kanban board by Konstantin Chukavin, 2023
         </div>
       </div>
     </footer>
